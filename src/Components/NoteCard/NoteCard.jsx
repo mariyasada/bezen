@@ -1,13 +1,11 @@
 import { BsPin, BsPinFill, BsTrash } from "react-icons/bs";
 import { MdOutlineModeEditOutline } from "react-icons/md";
-import { useState } from "react";
 import "./notecard.css";
 import { useNotes } from "../../Context/useNotes";
 
 export const NoteCard = ({ note, setIsOpen, isOpen }) => {
   const {
     deleteNote,
-    isEditing,
     setIsEditing,
     setNoteData,
     addToPinnedNote,

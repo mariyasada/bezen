@@ -5,15 +5,8 @@ import { useNotes } from "../../Context/useNotes";
 import "./Modal.css";
 
 const NoteModal = ({ setIsOpen }) => {
-  const {
-    noteData,
-    setNoteData,
-    dispatch,
-    addNotes,
-    isEditing,
-    setIsEditing,
-    editNote,
-  } = useNotes();
+  const { noteData, setNoteData, addNotes, isEditing, setIsEditing, editNote } =
+    useNotes();
 
   const changeHandler = (e) => {
     e.preventDefault();

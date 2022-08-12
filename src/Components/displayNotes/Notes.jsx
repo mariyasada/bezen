@@ -5,7 +5,7 @@ import { PinnedCard } from "../PinnedCard/PinnedCard";
 import "./notes.css";
 
 const Notes = ({ isOpen, setIsOpen }) => {
-  const { state, dispatch } = useNotes();
+  const { state } = useNotes();
   const { notesList, pinnedNoteList } = state;
   const notesPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);

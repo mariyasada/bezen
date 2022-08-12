@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer, useState,useEffect } from "react";
 import { noteReducer } from "./Reducer/NoteReducer";
 import { doc, setDoc,collection, addDoc, getDocs, deleteDoc,updateDoc,query,where } from "firebase/firestore";
-import { app,db } from "../firebaseConfig";
+import { db } from "../firebaseConfig";
 import toast from "react-hot-toast";
 
 

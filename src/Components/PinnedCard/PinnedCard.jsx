@@ -1,9 +1,9 @@
-import { BsPin, BsPinFill } from "react-icons/bs";
+import { BsPinFill } from "react-icons/bs";
 import "../NoteCard/notecard.css";
 import { useNotes } from "../../Context/useNotes";
 
 export const PinnedCard = ({ note }) => {
-  const { setNoteData, removeFromPinnedNotes } = useNotes();
+  const { removeFromPinnedNotes } = useNotes();
   return (
     <div
       className="card notes-card card-with-dismiss"
