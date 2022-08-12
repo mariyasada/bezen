@@ -1,0 +1,81 @@
+.modal-background {
+  background-color: rgba(226, 223, 223, 0.5);
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: 30;
+}
+.modal-container {
+  height: auto;
+  width: 30vw;
+  background-color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.create-note-modal {
+  width: 40%;
+  margin: 0 1.2rem;
+}
+
+.modal-header {
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.create-note-modal .add-note-container {
+  margin: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.note-title {
+  border: none;
+  outline: none;
+  width: 98%;
+  border-radius: 0;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white-color);
+  padding: 4px;
+}
+
+.note-content {
+  margin-top: 1rem;
+  border: 0;
+  outline: 0;
+  resize: none;
+  padding: 1rem;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white-color);
+}
+.add-note-footer {
+  margin-top: 1.6rem;
+}
+.note-select {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.create-note-btn {
+  margin-left: auto;
+  margin-top: 2rem;
+  background-color: (--primary-color-dark);
+}
+.label {
+  padding: 0 1rem;
+}
+.note-tagline {
+  padding: 4px;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white-color);
+}

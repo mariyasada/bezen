@@ -1,0 +1,55 @@
+.All-Notes-container {
+  margin-top: 5rem;
+}
+.pinned-notes-container,
+.my-notes-container {
+  height: max-content;
+}
+.paginate-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 2rem;
+}
+
+.disabled-cursor {
+  cursor: no-drop;
+}
+.btn-paginate {
+  background-color: var(--primary-color-dark);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 0.3rem 0.5rem;
+  width: 5rem;
+  padding: 0.3rem 0.5rem;
+  font-size: medium;
+  color: white;
+}
+.cursor {
+  cursor: pointer;
+}
+.primary-btn {
+  background-color: var(--primary-color-dark);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 0.3rem 0.5rem;
+  width: 2rem;
+  padding: 0.3rem 0.5rem;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+}
+.secondary-btn {
+  background-color: whitesmoke;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 0.3rem 0.5rem;
+  width: 2rem;
+  padding: 0.3rem 0.5rem;
+  font-size: medium;
+  color: var(--primary-color-dark);
+  cursor: pointer;
+  font-weight: 600;
+}

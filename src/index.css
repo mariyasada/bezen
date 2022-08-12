@@ -1,13 +1,63 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(240, 238, 238);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #9792ad;
+  --primary-color-dark: #8b5cf6;
+  --primary-ex-dark: #5b21b6;
+  --white-color: #f7f7f7;
+  --gray-color: #c5c5c5;
+  --warning-color: #ffc107;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.btn-add {
+  background-color: var(--primary-color-dark);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 8rem;
+  padding: 0.5rem;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+}
+.space-between {
+  justify-content: space-between;
+}
+.float-left {
+  float: left;
+}
+.gap {
+  gap: 0.7rem;
+}
+.ml-4 {
+  margin-left: 6rem;
+}
+.lg-text {
+  font-size: 1.2rem;
+}
+.transparent {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 1rem;
+  grid-template-rows: auto;
+  gap: 0.6rem;
+}
+h1 {
+  color: var(--primary-ex-dark);
 }

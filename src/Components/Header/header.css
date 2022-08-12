@@ -1,0 +1,55 @@
+.Header-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+.heading-in-note-page {
+  font-size: 3rem;
+  padding: 7px;
+  margin: 3px;
+}
+
+.name-of-app {
+  color: var(--primary-color-dark);
+}
+@media screen and (max-width: 900px) {
+  .Header-container {
+    width: 100vw;
+  }
+  .heading-in-note-page {
+    font-size: 2rem;
+    padding: 5px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 19rem;
+  }
+  .notes-card .card-text {
+    font-size: 1rem;
+  }
+  .card-left {
+    margin-left: 0.6rem;
+  }
+  .xlg-text {
+    font-size: 1.5rem;
+  }
+  .modal-container.create-note-modal {
+    width: 60vw;
+    height: 85vh;
+  }
+  .note-content {
+    margin-top: 2px;
+  }
+  .modal-container .add-note-footer {
+    margin-top: 4px;
+  }
+  .note-select.note-label {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

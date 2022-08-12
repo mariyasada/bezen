@@ -6,6 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+div .toast-display {
+  font-size: 1.3rem;
+  width: 30rem;
+  background-color: rgb(116, 33, 224);
+  color: white;
+  font-weight: bolder;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Notes from './Components/displayNotes/Notes';
+import Header from './Components/Header/Header';
+import { Toaster } from "react-hot-toast";
+import {useState} from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Notes isOpen={isOpen} setIsOpen={setIsOpen}/>
+       <Toaster
+        position="top-center"
+        toastOptions={{ className: "toast-display", duration: 3000 }}
+      />    
     </div>
   );
 }
