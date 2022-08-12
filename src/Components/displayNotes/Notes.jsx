@@ -14,7 +14,6 @@ const Notes = ({ isOpen, setIsOpen }) => {
   useEffect(() => {
     if (notesList.length > 0) {
       setTotalPages(Math.ceil(notesList.length / notesPerPage));
-      // setCurrentPage(1);
     }
   }, [notesList]);
 
