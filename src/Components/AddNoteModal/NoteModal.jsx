@@ -22,7 +22,7 @@ const NoteModal = ({ setIsOpen }) => {
     ) {
       toast("please fill all the fields", { icon: "✔" });
     } else if (noteData && isEditing) {
-      editNote(noteData);
+      editNote({ ...noteData, date: new Date().toLocaleDateString() });
       setIsEditing(!isEditing);
     } else {
       addNotes(noteData);

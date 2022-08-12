@@ -18,7 +18,7 @@ const Notes = ({ isOpen, setIsOpen }) => {
     }
   }, [notesList]);
 
-  const endIndex = notesPerPage * currentPage; //6*1
+  const endIndex = notesPerPage * currentPage;
   const startIndex = endIndex - notesPerPage;
   const paginatedNotes = notesList?.slice(startIndex, endIndex);
 
@@ -67,7 +67,7 @@ const Notes = ({ isOpen, setIsOpen }) => {
                 className={`btn-paginate ${
                   currentPage === index + 1 ? "primary-btn" : "secondary-btn"
                 }`}
-                onClick={() => setCurrentPage(currentPage + 1)}
+                onClick={() => setCurrentPage(index + 1)}
               >
                 {index + 1}
               </button>
