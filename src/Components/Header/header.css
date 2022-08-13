@@ -39,8 +39,8 @@
     font-size: 1.5rem;
   }
   .modal-container.create-note-modal {
-    width: 60vw;
-    height: 85vh;
+    width: 70vw;
+    height: 82vh;
   }
   .note-content {
     margin-top: 2px;

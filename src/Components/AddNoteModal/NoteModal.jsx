@@ -24,11 +24,13 @@ const NoteModal = ({ setIsOpen }) => {
     } else if (noteData && isEditing) {
       editNote({ ...noteData, date: new Date().toLocaleDateString() });
       setIsEditing(!isEditing);
+      setIsOpen(false);
+      setNoteData({ title: "", content: "", tagLine: "" });
     } else {
       addNotes(noteData);
+      setIsOpen(false);
+      setNoteData({ title: "", content: "", tagLine: "" });
     }
-    setIsOpen(false);
-    setNoteData({ title: "", content: "", tagLine: "" });
   };
 
   const cancelHandler = () => {
